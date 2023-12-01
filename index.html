@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>琴島製品KP儀表板</title>
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <i class='bx bxs-dashboard'></i>
+            <div class="logo-name"><span>琴島製品KP</div>
+        </a>
+        <ul class="side-menu">
+            <li class="active"><a href="index.html"><i class='bx bxs-dashboard'></i>儀表板</a></li>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    登出
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+            </form>
+            <a href="#" class="profile">
+                <img src="我的頭像.jpg">
+            </a>
+        </nav>
+
+        <!-- End of Navbar -->
+
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>儀表板</h1>
+                </div>
+                <a href="#" class="report">
+                    <i class='bx bx-cloud-download'></i>
+                    <span>Download 數據</span>
+                </a>
+            </div>
+
+            <!-- Insights -->
+            <ul class="insights">
+                <li>
+                    <i class='bx bx-calendar-check'></i>
+                    <span class="info">
+                        <h3>
+                            生日12/5
+                        </h3>
+                        <p>特殊節日</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-show-alt'></i>
+                    <span class="info">
+                        <h3>
+                            25
+                        </h3>
+                        <p>進入人數</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-line-chart'></i>
+                    <span class="info">
+                        <h3>
+                            5
+                        </h3>
+                        <p>累積訂單</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-dollar-circle'></i>
+                    <span class="info">
+                        <h3>
+                            694040500
+                        </h3>
+                        <p>累積金額</p>
+                    </span>
+                </li>
+            </ul>
+            <!-- End of Insights -->
+
+            <div class="bottom-data">
+                <div class="orders">
+                    <div class="header">
+                        <i class='bx bx-receipt'></i>
+                        <h3>最近事務</h3>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>用戶</th>
+                                <th>日期</th>
+                                <th>類別</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="頭像.png">
+                                    <p>mohongchen0714</p>
+                                </td>
+                                <td>2023/11/30</td>
+                                <td><span class="status completed">請求代理商品</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="頭像.png">
+                                    <p>yurffgff2</p>
+                                </td>
+                                <td>2023/11/30</td>
+                                <td><span class="status pending">M17手槍購買</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="頭像.png">
+                                    <p>yurffgff2</p>
+                                </td>
+                                <td>2023/11/30</td>
+                                <td><span class="status process">請求機器人製作</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Reminders -->
+                <div class="reminders">
+                    <div class="header">
+                        <i class='bx bx-note'></i>
+                        <h3>狀態</h3>
+                    </div>
+                    <ul class="task-list">
+                        <li class="completed">
+                         <div class="task-title">
+                            <i class='bx bx-check-circle'></i>
+                                <p>mohongchen0714請求代理商品</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>yurffgff2購買M17手槍,金額確認</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="not-completed">
+                            <div class="task-title">
+                                <i class='bx bx-x-circle'></i>
+                                <p>yurffgff2請求機器人</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- End of Reminders-->
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
